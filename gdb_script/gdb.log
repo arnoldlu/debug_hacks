@@ -1,0 +1,599 @@
+gdb.init:13: Error in sourced command file:
+Undefined command: "br_info".  Try "help".
+Breakpoint 1 at 0x4004e0: file main.c, line 5.
+Quit
+Breakpoint 1 at 0x4004e0: file main.c, line 5.
+Quit
+Breakpoint 1 at 0x4004e0: file main.c, line 5.
+gdb.init:19: Error in sourced command file:
+No frame selected.
+No symbol "a" in current context.
+Note: breakpoint 1 also set at pc 0x4004e0.
+Breakpoint 2 at 0x4004e0: file main.c, line 5.
+The program is not being run.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, sum (a=0, b=0) at main.c:5
+5	    int result=0;
+1: a = 0
+2: b = 0
+3: result = 0
+4: {a, b, result} = {0, 0, 0}
+6	    result = a+b;
+1: a = 0
+2: b = 0
+3: result = 0
+4: {a, b, result} = {0, 0, 0}
+8	    return result;
+1: a = 0
+2: b = 0
+3: result = 0
+4: {a, b, result} = {0, 0, 0}
+9	}
+1: a = 0
+2: b = 0
+3: result = 0
+4: {a, b, result} = {0, 0, 0}
+main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+17	        result = sum(i, i);
+
+Breakpoint 1, sum (a=1, b=1) at main.c:5
+5	    int result=0;
+1: a = 1
+2: b = 1
+3: result = 0
+4: {a, b, result} = {1, 1, 0}
+6	    result = a+b;
+1: a = 1
+2: b = 1
+3: result = 0
+4: {a, b, result} = {1, 1, 0}
+Continuing.
+
+Breakpoint 1, sum (a=2, b=2) at main.c:5
+5	    int result=0;
+1: a = 2
+2: b = 2
+3: result = 2
+4: {a, b, result} = {2, 2, 2}
+Continuing.
+
+Breakpoint 1, sum (a=3, b=3) at main.c:5
+5	    int result=0;
+1: a = 3
+2: b = 3
+3: result = 4
+4: {a, b, result} = {3, 3, 4}
+Continuing.
+
+Breakpoint 1, sum (a=4, b=4) at main.c:5
+5	    int result=0;
+1: a = 4
+2: b = 4
+3: result = 6
+4: {a, b, result} = {4, 4, 6}
+Continuing.
+
+Breakpoint 1, sum (a=5, b=5) at main.c:5
+5	    int result=0;
+1: a = 5
+2: b = 5
+3: result = 8
+4: {a, b, result} = {5, 5, 8}
+Continuing.
+
+Breakpoint 1, sum (a=6, b=6) at main.c:5
+5	    int result=0;
+1: a = 6
+2: b = 6
+3: result = 10
+4: {a, b, result} = {6, 6, 10}
+Continuing.
+
+Breakpoint 1, sum (a=7, b=7) at main.c:5
+5	    int result=0;
+1: a = 7
+2: b = 7
+3: result = 12
+4: {a, b, result} = {7, 7, 12}
+Continuing.
+
+Breakpoint 1, sum (a=8, b=8) at main.c:5
+5	    int result=0;
+1: a = 8
+2: b = 8
+3: result = 14
+4: {a, b, result} = {8, 8, 14}
+Continuing.
+
+Breakpoint 1, sum (a=9, b=9) at main.c:5
+5	    int result=0;
+1: a = 9
+2: b = 9
+3: result = 16
+4: {a, b, result} = {9, 9, 16}
+1: a = 9
+2: b = 9
+3: result = 16
+4: {a, b, result} = {9, 9, 16}
+Auto-display expressions now in effect:
+Num Enb Expression
+1:   y  a
+2:   y  b
+3:   y  result
+4:   y  {a, b, result}
+No display number 1.
+Auto-display expressions now in effect:
+Num Enb Expression
+4:   y  {a, b, result}
+Continuing.
+[Inferior 1 (process 5966) exited normally]
+The program is not being run.
+The program is not being run.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, sum (a=0, b=0) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {0, 0, 0}
+Continuing.
+
+Breakpoint 1, sum (a=1, b=1) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {1, 1, 0}
+Continuing.
+
+Breakpoint 1, sum (a=2, b=2) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {2, 2, 2}
+Continuing.
+
+Breakpoint 1, sum (a=3, b=3) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {3, 3, 4}
+Continuing.
+
+Breakpoint 1, sum (a=4, b=4) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {4, 4, 6}
+Continuing.
+
+Breakpoint 1, sum (a=5, b=5) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {5, 5, 8}
+Continuing.
+
+Breakpoint 1, sum (a=6, b=6) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {6, 6, 10}
+Continuing.
+
+Breakpoint 1, sum (a=7, b=7) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {7, 7, 12}
+Continuing.
+
+Breakpoint 1, sum (a=8, b=8) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {8, 8, 14}
+Continuing.
+
+Breakpoint 1, sum (a=9, b=9) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {9, 9, 16}
+Continuing.
+[Inferior 1 (process 5976) exited normally]
+The program is not being run.
+The program is not being run.
+The program is not being run.
+The program is not being run.
+The program is not being run.
+The program is not being run.
+The program is not being run.
+Auto-display expressions now in effect:
+Num Enb Expression
+4:   y  {a, b, result} (cannot be evaluated in the current context)
+The program is not being run.
+The program is not being run.
+The program is not being run.
+The program is not being run.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, sum (a=0, b=0) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {0, 0, 0}
+#0  sum (a=0, b=0) at main.c:5
+        result = 0
+#1  0x000000000040051e in main (argc=1, argv=0x7fffffffdd18) at main.c:17
+        i = 0
+        result = 0
+$1 = (char **) 0x7fffffffdd18
+$2 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+Continuing.
+
+Breakpoint 1, sum (a=1, b=1) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {1, 1, 0}
+Continuing.
+
+Breakpoint 1, sum (a=2, b=2) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {2, 2, 2}
+Continuing.
+
+Breakpoint 1, sum (a=3, b=3) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {3, 3, 4}
+Continuing.
+
+Breakpoint 1, sum (a=4, b=4) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {4, 4, 6}
+Continuing.
+
+Breakpoint 1, sum (a=5, b=5) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {5, 5, 8}
+Continuing.
+
+Breakpoint 1, sum (a=6, b=6) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {6, 6, 10}
+Continuing.
+
+Breakpoint 1, sum (a=7, b=7) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {7, 7, 12}
+Continuing.
+
+Breakpoint 1, sum (a=8, b=8) at main.c:5
+5	    int result=0;
+4: {a, b, result} = {8, 8, 14}
+Deleted breakpoints 1 2 
+Breakpoint 1 at 0x4004e0: file main.c, line 5.
+gdb.init:19: Error in sourced command file:
+No frame selected.
+Undefined command: "ls".  Try "help".
+User-defined.
+gdb.init:20: Error in sourced command file:
+Argument required (one or more breakpoint numbers).
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+gdb.init:11: Error in sourced command file:
+Argument required (one or more breakpoint numbers).
+gdb.init:11: Error in sourced command file:
+Undefined command: "br_info".  Try "help".
+Argument required (one or more breakpoint numbers).
+The program is not being run.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+[Inferior 1 (process 22594) exited normally]
+Starting program: /home/al/debug_hacks/gdb_script/main 
+[Inferior 1 (process 22598) exited normally]
+No breakpoints or watchpoints.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+[Inferior 1 (process 22599) exited normally]
+Temporary breakpoint 1 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 1, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+No breakpoint number 1.
+gdb.init:21: Error in sourced command file:
+No breakpoints specified.
+Temporary breakpoint 1 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 1, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+No breakpoint number 1.
+gdb.init:21: Error in sourced command file:
+No breakpoints specified.
+Temporary breakpoint 1 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 1, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+No breakpoint number 1.
+gdb.init:21: Error in sourced command file:
+No breakpoints specified.
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 3 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 3, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+No breakpoint number 3.
+gdb.init:22: Error in sourced command file:
+No breakpoints specified.
+Temporary breakpoint 1 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 1, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+$1 = {void, void}
+$2 = void
+$3 = 1
+$4 = (char **) 0x7fffffffdd18
+$5 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$6 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$7 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$8 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$9 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$10 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 2 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 2, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+No symbol "arg0" in current context.
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 3 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 3, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+array elements must all be the same size
+$11 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 4 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 4, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+array elements must all be the same size
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 5 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 5, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+array elements must all be the same size
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 6 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 6, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+array elements must all be the same size
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 7 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 7, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+array elements must all be the same size
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 8 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 8, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+gdb.init:22: Error in sourced command file:
+array elements must all be the same size
+$12 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$13 = 47 '/'
+$14 = 47 '/'
+$15 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$16 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$17 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$18 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$19 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$20 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$21 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+$22 = 0x7fffffffe107 "home/al/debug_hacks/gdb_script/main"
+$23 = 0x7fffffffe107 "home/al/debug_hacks/gdb_script/main"
+$24 = 0x7fffffffe107 "home/al/debug_hacks/gdb_script/main"
+$25 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 9 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 9, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+$26 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+Already logging to gdb.log.
+Redefine command "bf"? (y or n) [answered Y; input not from terminal]
+Redefine command "br_info"? (y or n) [answered Y; input not from terminal]
+Temporary breakpoint 10 at 0x400506: file main.c, line 15.
+
+Temporary breakpoint 10, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+$27 = 0x7fffffffe106 "/home/al/debug_hacks/gdb_script/main"
+No stack.
+Temporary breakpoint 1 at 0x400506: file main.c, line 15.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Temporary breakpoint 1, main (argc=1, argv=0x7fffffffdd18) at main.c:15
+15	    for(i=0; i<10; i++)
+#0  main (argc=1, argv=0x7fffffffdd18) at main.c:15
+        i = 0
+        result = 0
+#0  main (argc=1, argv=0x7fffffffdd18) at main.c:15
+        i = 0
+        result = 0
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+    Dump all backtrace in full format.
+#0  main (argc=1, argv=0x7fffffffdd18) at main.c:15
+        i = 0
+        result = 0
+    Dump all backtrace in full format.
+Type commands for definition of "user_func".
+End with a line saying just "end".
+Type commands for definition of "sum".
+End with a line saying just "end".
+Ambiguous command "a = sum": actions, add-auto-load-safe-path, add-auto-load-scripts-directory, add-inferior...
+Type commands for definition of "sum".
+End with a line saying just "end".
+A syntax error in expression, near `, 3}'.
+$1 = {2, 1, 3}
+result = 4195575
+unwind_buf = {cancel_jmp_buf = {{jmp_buf = {0, 3638320302093468716, 4195296, 140737488346384, 0, 0, -3638320850964347860, -3638338074040105940}, mask_was_saved = 0}}, priv = {pad = {0x0, 0x0, 0x1, 0x4004f7 <main>}, data = {
+      prev = 0x0, cleanup = 0x0, canceltype = 1}}}
+not_first_call = <optimised out>
+$resultUndefined command: "ls".  Try "help".
+$1 = 20
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Undefined command: "sum".  Try "help".
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+Already logging to gdb.log.
+Redefine command "adder"? (y or n) [answered Y; input not from terminal]
+$1 = 13
+$2 = 17
+  Sum two or three variables.
+This target does not support masked watchpoints.
+Invalid thread ID: 0xffff0000
+Invalid thread ID: 0
+Unknown thread 1.
+Unknown thread 2.
+Breakpoint 1 at 0x4004e0: file main.c, line 5.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, sum (a=5, b=5) at main.c:5
+5	    int result=0;
+#0  sum (a=5, b=5) at main.c:5
+        result = 8
+#1  0x000000000040051e in main (argc=1, argv=0x7fffffffdd18) at main.c:17
+        i = 5
+        result = 8
+i = 5
+result = 8
+$1 = "Hit break when a == 5"
+Breakpoint 1 at 0x4004dd: file main.c, line 7.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, square (i=5) at main.c:7
+7	    int result=0;
+#0  square (i=5) at main.c:7
+        result = 16
+#1  0x0000000000400515 in main (argc=1, argv=0x7fffffffdd18) at main.c:20
+        i = 5
+i = 5
+$1 = "Hit break when i == 5"
+Breakpoint 1 at 0x4004dd: file main.c, line 7.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, square (i=5) at main.c:7
+7	    int result=0;
+#0  square (i=5) at main.c:7
+        result = 16
+#1  0x0000000000400515 in main (argc=1, argv=0x7fffffffdd18) at main.c:20
+        i = 5
+i = 5
+$1 = "Hit break when i == 5"
+Already logging to gdb.log.
+Breakpoint 2 at 0x4004dd: file main.c, line 7.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, square (i=5) at main.c:7
+7	    int result=0;
+#0  square (i=5) at main.c:7
+        result = 16
+#1  0x0000000000400515 in main (argc=1, argv=0x7fffffffdd18) at main.c:20
+        i = 5
+i = 5
+$2 = "Hit break when i == 5"
+#0  square (i=5) at main.c:7
+        result = 16
+#1  0x0000000000400515 in main (argc=1, argv=0x7fffffffdd18) at main.c:20
+        i = 5
+i = 5
+$3 = 30
+$4 = "Hit break when i == 5"
+Breakpoint 1 at 0x4004dd: file main.c, line 7.
+Starting program: /home/al/debug_hacks/gdb_script/main 
+
+Breakpoint 1, square (i=5) at main.c:7
+7	    int result=0;
+#0  square (i=5) at main.c:7
+        result = 16
+#1  0x0000000000400515 in main (argc=1, argv=0x7fffffffdd18) at main.c:20
+        i = 5
+i = 5
+$1 = 30
+$2 = "Hit break when i == 5"
+Exception ignored in: <gdb.GdbOutputFile object at 0x7f8382223630>
+Traceback (most recent call last):
+  File "/usr/share/gdb/python/gdb/__init__.py", line 43, in flush
+    def flush(self):
+KeyboardInterrupt
